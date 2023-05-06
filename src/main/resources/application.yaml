@@ -1,0 +1,29 @@
+server:
+  port: 8080
+  servlet:
+    session:
+      cookie:
+        max-age: 15m
+    context-path: /api
+  error:
+    include-stacktrace: never
+
+logging:
+  level:
+    web: off
+
+spring:
+  thymeleaf:
+    check-template-location: false
+
+togglz:
+  enabled: true
+  features:
+    TOGGLE_CONTROLLER:
+      label: "Habilitar get toggle controller"
+      enabled: true
+  console:
+    enabled: true
+    secured: false
+
+
